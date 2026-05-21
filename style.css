@@ -242,6 +242,11 @@ p {
   font-size: 3rem;
   letter-spacing: -1px;
   margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--branco) 30%, var(--amarelo-destaque) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block; /* Garante o correto comportamento do background-clip */
 }
 
 .hero-content {
