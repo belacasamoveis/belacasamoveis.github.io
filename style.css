@@ -23,6 +23,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 110px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -32,6 +34,13 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  width: 100%;
+}
+
+/* Prevenção de estouro por palavras longas */
+h1, h2, h3, h4, h5, h6, p, span, a, li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 a {
@@ -492,7 +501,9 @@ section {
 }
 
 .selo-produto {
-  display: inline-table;
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
   background-color: var(--cinza-escuro);
   color: var(--cinza-texto);
   font-size: 0.8rem;
@@ -678,7 +689,7 @@ section {
 
 .contato-info h2 {
   white-space: nowrap;
-  font-size: clamp(1.2rem, 4.8vw, 2.5rem);
+  font-size: clamp(0.95rem, 4.8vw, 2.5rem);
 }
 
 .contato-container {
@@ -712,6 +723,10 @@ section {
 
 .info-box p {
   margin: 0;
+}
+
+.address-text {
+  white-space: nowrap;
 }
 
 .placeholder-mapa {
@@ -1478,6 +1493,53 @@ section {
   .vender-container {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+
+/* RESPONSIVIDADE COMPLEMENTAR PARA MOBILE */
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .footer-about {
+    grid-column: span 1;
+  }
+
+  .logo-img-footer {
+    margin: 0 auto 15px;
+  }
+
+  .footer-contact-list li,
+  .footer-contact-list li a,
+  .footer-contact-list li .footer-static-item {
+    justify-content: center;
+  }
+
+  .vender-info-card {
+    padding: 25px 15px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .whatsapp-flutuante {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .whatsapp-flutuante svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .address-text {
+    font-size: clamp(0.7rem, 2.9vw, 0.95rem);
   }
 }
 
