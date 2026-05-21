@@ -162,6 +162,13 @@ p {
   letter-spacing: 1px;
 }
 
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -715,6 +722,14 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   display: block;
+}
+
+.logo-img-footer {
+  height: 60px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
 .footer-col h4 {
