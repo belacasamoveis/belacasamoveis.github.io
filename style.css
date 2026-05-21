@@ -874,35 +874,91 @@ section {
     grid-template-columns: 1fr;
   }
 
-  /* Efeito 4: Slider/Carrossel Nativo no Mobile */
+  /* Grid 2x2 no Mobile/Tablet */
   .categorias-grid, .produtos-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 20px;
-    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin: 0 -20px; /* Bleed to edge */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
+    margin: 0;
   }
   
   .categoria-card, .produto-card {
-    min-width: 260px;
-    scroll-snap-align: center;
-    flex: 0 0 auto;
+    min-width: 0;
+    width: 100%;
   }
-  
-  /* Esconder scrollbar mas permitir scroll fluído */
-  .categorias-grid::-webkit-scrollbar, 
-  .produtos-grid::-webkit-scrollbar {
-    display: none;
+
+  .categoria-card {
+    padding: 20px 12px;
   }
-  .categorias-grid, .produtos-grid {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+  .categoria-imagem-container {
+    width: calc(100% + 24px);
+    height: 120px;
+    margin: -20px -12px 15px -12px;
   }
+
+  .categoria-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+  }
+
+  .categoria-card p {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.6em; /* Limita altura para manter alinhado */
+  }
+
+  .categoria-icon-overlay {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .produto-imagem-real {
+    height: 140px;
+  }
+
+  .produto-info {
+    padding: 12px;
+  }
+
+  .produto-categoria {
+    font-size: 0.7rem;
+  }
+
+  .produto-card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .produto-card p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.6em;
+  }
+
+  .selo-produto {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    margin-bottom: 10px;
+  }
+
+  .produto-card .btn-primary {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
 }
 
 /* 13. MODAL (GALERIA) */
