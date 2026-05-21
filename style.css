@@ -22,7 +22,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -151,7 +151,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 110px;
+  transition: height 0.3s ease;
 }
 
 .logo {
@@ -163,10 +164,11 @@ p {
 }
 
 .logo-img {
-  height: 50px;
+  height: 90px;
   width: auto;
   display: block;
   object-fit: contain;
+  transition: height 0.3s ease;
 }
 
 .nav-menu {
@@ -725,7 +727,7 @@ section {
 }
 
 .logo-img-footer {
-  height: 60px;
+  height: 110px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -851,6 +853,18 @@ section {
 }
 
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 90px;
+  }
+
+  .header-container {
+    height: 90px;
+  }
+
+  .logo-img {
+    height: 70px;
+  }
+
   .menu-toggle {
     display: block;
     z-index: 1001;
