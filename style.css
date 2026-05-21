@@ -221,14 +221,29 @@ p {
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-rows: auto auto;
+  column-gap: 40px;
+  row-gap: 0;
   align-items: center;
 }
 
-.hero-content h1 {
+.hero-title {
+  grid-column: 1;
+  grid-row: 1;
   font-size: 3rem;
-  margin-bottom: 1.5rem;
   letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+}
+
+.hero-image {
+  grid-column: 2;
+  grid-row: 1 / span 2;
 }
 
 .hero-content p {
@@ -772,20 +787,35 @@ section {
 
 /* RESPONSIVIDADE */
 @media (max-width: 992px) {
-  .hero-container,
   .sobre-container,
   .pagamento-container,
   .entrega-container,
   .contato-container {
     grid-template-columns: 1fr;
   }
-  
-  .hero-content {
-    order: 2;
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 25px;
   }
-  
+
+  .hero-title {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
   .hero-image {
-    order: 1;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .hero-content {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: stretch;
   }
 
   .entrega-image {
@@ -802,10 +832,6 @@ section {
 
   .footer-about {
     grid-column: span 2;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.2rem;
   }
 }
 
