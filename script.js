@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div>
                         <span class="selo-produto">Consulte disponibilidade</span>
                     </div>
-                    <a href="${linkWpp}" target="_blank" class="btn-primary">Consultar no WhatsApp</a>
+                    <a href="#contato-whatsapp" class="btn-primary">Solicitar Fotos Reais</a>
                 </div>
             `;
             produtosGrid.appendChild(card);
