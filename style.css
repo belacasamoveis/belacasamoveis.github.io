@@ -859,11 +859,11 @@ section {
   }
 
   .footer-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer-about {
-    grid-column: span 1;
+    grid-column: span 2;
   }
   
   h2 {
