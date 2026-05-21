@@ -1318,3 +1318,36 @@ section {
     text-align: center;
   }
 }
+
+/* Footer Contact List with Icons */
+.footer-contact-list {
+  margin-top: 10px;
+}
+.footer-contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--cinza-texto);
+}
+.footer-contact-list li a,
+.footer-contact-list li .footer-static-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cinza-texto);
+  transition: color 0.3s ease;
+}
+.footer-contact-list li a:hover {
+  color: var(--branco);
+}
+.footer-contact-list li svg {
+  color: var(--amarelo-destaque);
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+.footer-contact-list li a:hover svg {
+  transform: scale(1.15);
+}
