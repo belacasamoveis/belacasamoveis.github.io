@@ -94,7 +94,17 @@ window.abrirGaleria = function(categoriaNome) {
     }, 10);
     
     // Impedir o scroll da página de fundo enquanto o modal está aberto
-    document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+};
+
+window.abrirGaleriaRodape = function(categoriaNome) {
+    const secaoCategorias = document.getElementById('categorias');
+    if (secaoCategorias) {
+        secaoCategorias.scrollIntoView({ behavior: 'smooth' });
+    }
+    setTimeout(() => {
+        window.abrirGaleria(categoriaNome);
+    }, 600);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
