@@ -1,4 +1,4 @@
-/* Identidade Visual */
+﻿/* Identidade Visual */
 :root {
   --preto-principal: #111111;
   --preto-secundario: #1C1C1C;
@@ -860,6 +860,17 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .contato-info {
+    text-align: left;
+  }
+
+  .info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -898,6 +909,16 @@ section {
 
   .footer-about {
     grid-column: span 2;
+    text-align: left;
+  }
+
+  .footer-col {
+    text-align: left;
+  }
+
+  .logo-img-footer {
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
@@ -1527,8 +1548,19 @@ section {
     height: 28px;
   }
 
+  .info-box {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .info-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
   .address-text {
-    font-size: clamp(0.55rem, 2.5vw, 0.95rem);
+    font-size: clamp(0.5rem, 2.5vw, 0.95rem);
   }
 }
 
