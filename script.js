@@ -1,7 +1,7 @@
 /**
  * Constante do Número do WhatsApp
  */
-const WHATSAPP_NUMBER = "554199558860";
+const WHATSAPP_NUMBER = "5541999558860";
 
 /**
  * Função para gerar link do WhatsApp com mensagem codificada
