@@ -600,6 +600,30 @@ section {
   font-size: 1.1rem;
 }
 
+.pagamento-destaque-box {
+  background-color: var(--preto-secundario);
+  border: 1px solid var(--borda-suave);
+  border-left: 4px solid var(--amarelo-destaque);
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.destaque-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.destaque-text {
+  font-size: 0.95rem;
+  color: var(--cinza-texto);
+  line-height: 1.5;
+  margin: 0;
+}
+
 .chamada-pagamento {
   font-weight: 600;
   color: var(--branco);
