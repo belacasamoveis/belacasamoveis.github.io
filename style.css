@@ -1380,3 +1380,99 @@ section {
 .footer-contact-list li a:hover svg {
   transform: scale(1.15);
 }
+
+/* 10. QUER VENDER? / COMPRAMOS */
+.vender {
+  background-color: var(--preto-secundario);
+  border-top: 1px solid var(--borda-suave);
+  border-bottom: 1px solid var(--borda-suave);
+}
+
+.vender-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.passos-vender {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.passo-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.passo-numero {
+  background-color: var(--amarelo-destaque);
+  color: var(--preto-principal);
+  font-weight: 800;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.passo-text h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--branco);
+}
+
+.passo-text p {
+  font-size: 0.95rem;
+  color: var(--cinza-texto);
+  margin: 0;
+}
+
+.vender-info-card {
+  background-color: var(--preto-principal);
+  border: 1px solid var(--borda-suave);
+  padding: 40px 30px;
+  border-radius: 8px;
+}
+
+.vender-info-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: var(--amarelo-destaque);
+  border-bottom: 1px solid var(--borda-suave);
+  padding-bottom: 10px;
+}
+
+.lista-itens-compramos li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: var(--branco);
+}
+
+.vender-requisito {
+  margin-top: 25px;
+  background-color: rgba(245, 197, 66, 0.05);
+  border: 1px dashed var(--amarelo-destaque);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.vender-requisito p {
+  font-size: 0.9rem;
+  color: var(--cinza-texto);
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .vender-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
