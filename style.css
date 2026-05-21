@@ -1499,23 +1499,12 @@ section {
 /* RESPONSIVIDADE COMPLEMENTAR PARA MOBILE */
 @media (max-width: 576px) {
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   .footer-about {
-    grid-column: span 1;
-  }
-
-  .logo-img-footer {
-    margin: 0 auto 15px;
-  }
-
-  .footer-contact-list li,
-  .footer-contact-list li a,
-  .footer-contact-list li .footer-static-item {
-    justify-content: center;
+    grid-column: span 2;
   }
 
   .vender-info-card {
@@ -1538,26 +1527,8 @@ section {
     height: 28px;
   }
 
-  .contato-info {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-box {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-
-  .info-box h4 {
-    margin-bottom: 2px;
-  }
-
   .address-text {
-    font-size: clamp(0.6rem, 2.8vw, 0.95rem);
+    font-size: clamp(0.55rem, 2.5vw, 0.95rem);
   }
 }
 
