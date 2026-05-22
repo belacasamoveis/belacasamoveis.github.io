@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Constante do Número do WhatsApp
  */
 const WHATSAPP_NUMBER = "554135855059";
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { nome: "Rack para TV", categoria: "Racks e painéis", descricao: "Móveis funcionais para organizar sua sala e valorizar sua TV.", imagem: "assets/cat-racks.png" },
         { nome: "Fogão", categoria: "Eletrodomésticos", descricao: "Eletrodomésticos selecionados para facilitar sua rotina.", imagem: "assets/cat-eletro.png" },
         { nome: "Geladeira", categoria: "Eletrodomésticos", descricao: "Opções usadas e seminovas conforme disponibilidade em loja.", imagem: "assets/cat-eletro.png" },
-        { nome: "Máquina de lavar", categoria: "Eletrodomésticos", descricao: "Produtos para deixar sua casa mais prática e completa.", imagem: "assets/cat-eletro.png" }
+        { nome: "Máquina de lavar", categoria: "Eletrodomésticos", descricao: "Produtos para deixar sua casa mais prática e completa.", imagem: "assets/cat-lavadora.png" }
     ];
 
     const produtosGrid = document.getElementById('produtos-grid');
