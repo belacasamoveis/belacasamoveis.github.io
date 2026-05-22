@@ -1,4 +1,4 @@
-Ôªø/* Identidade Visual */
+/* Identidade Visual */
 :root {
   --preto-principal: #111111;
   --preto-secundario: #1C1C1C;
@@ -13,7 +13,7 @@
   --borda-suave: #333333;
 }
 
-/* Reset B√°sico */
+/* Reset B·sico */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 
-/* Preven√ß√£o de estouro por palavras longas */
+/* PrevenÁ„o de estouro por palavras longas */
 h1, h2, h3, h4, h5, h6, p, span, a, li {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -75,7 +75,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Utilit√°rios */
+/* Utilit·rios */
 .text-center {
   text-align: center;
 }
@@ -84,7 +84,7 @@ p {
   color: var(--amarelo-destaque);
 }
 
-/* Bot√µes */
+/* Botıes */
 .btn-primary {
   display: inline-block;
   background-color: var(--amarelo-destaque);
@@ -103,7 +103,7 @@ p {
   transform: translateY(-2px);
 }
 
-/* Efeito 3: Brilho nos bot√µes (Shine) */
+/* Efeito 3: Brilho nos botıes (Shine) */
 .btn-primary::before {
   content: '';
   position: absolute;
@@ -144,7 +144,7 @@ p {
   font-size: 1.1rem;
 }
 
-/* 1. CABE√áALHO */
+/* 1. CABE«ALHO */
 .header {
   position: fixed;
   top: 0;
@@ -338,7 +338,7 @@ p {
   z-index: 1;
 }
 
-/* Estrutura Geral das Se√ß√µes */
+/* Estrutura Geral das SeÁıes */
 section {
   padding: 80px 0;
 }
@@ -468,7 +468,7 @@ section {
 }
 
 .produto-card .imagem-container {
-  overflow: hidden; /* Mant√©m o zoom dentro do card */
+  overflow: hidden; /* MantÈm o zoom dentro do card */
 }
 
 .produto-info {
@@ -726,7 +726,7 @@ section {
 }
 
 .address-text {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .placeholder-mapa {
@@ -752,7 +752,7 @@ section {
   z-index: 1;
 }
 
-/* 11. RODAP√â */
+/* 11. RODAP… */
 .footer {
   background-color: var(--preto-secundario);
   padding: 60px 0 0;
@@ -848,7 +848,7 @@ section {
 .whatsapp-flutuante:hover {
   transform: scale(1.1);
   background-color: #20b858;
-  animation: none; /* Pausa o pulso no hover para focar na intera√ß√£o */
+  animation: none; /* Pausa o pulso no hover para focar na interaÁ„o */
 }
 
 /* RESPONSIVIDADE */
@@ -1088,7 +1088,7 @@ section {
 
 /* 13. MODAL (GALERIA) */
 .modal {
-  display: none; /* Escondido por padr√£o */
+  display: none; /* Escondido por padr„o */
   position: fixed;
   z-index: 2000;
   left: 0;
@@ -1563,4 +1563,5 @@ section {
     font-size: clamp(0.5rem, 2.5vw, 0.95rem);
   }
 }
+
 
