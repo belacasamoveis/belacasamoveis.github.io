@@ -688,7 +688,7 @@ section {
 }
 
 .contato-info h2 {
-  white-space: nowrap;
+  white-space: normal;
   font-size: clamp(0.95rem, 4.8vw, 2.5rem);
 }
 
