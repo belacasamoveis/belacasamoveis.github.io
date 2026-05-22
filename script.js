@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Constante do Número do WhatsApp
  */
 const WHATSAPP_NUMBER = "554135855059";
@@ -38,7 +38,7 @@ const galeriaDados = {
     },
     "Eletrodomésticos": {
         imagem: "assets/cat-eletro.png",
-        itens: ["Geladeira Frost Free Inox", "Fogão 4 Bocas Acendimento", "Máquina de Lavar 12kg", "Micro-ondas Espelhado", "Geladeira Duplex Usada", "Secadora de Roupas"]
+        itens: ["Geladeira Frost Free Inox", "Fogão 4 Bocas Acendimento", { nome: "Máquina de Lavar 12kg", imagem: "assets/cat-lavadora.png" }, "Micro-ondas Espelhado", "Geladeira Duplex Usada", "Secadora de Roupas"]
     },
     "Decoração": {
         imagem: "assets/cat-decoracao.png",
@@ -71,14 +71,16 @@ window.abrirGaleria = function(categoriaNome) {
     const dados = galeriaDados[categoriaNome] || { imagem: "assets/hero-furniture.png", itens: ["Produto da Loja 1", "Produto da Loja 2"] };
     
     // Renderizar itens
-    dados.itens.forEach((itemNome) => {
+    dados.itens.forEach((item) => {
+        const itemNome = typeof item === 'object' ? item.nome : item;
+        const itemImagem = (typeof item === 'object' && item.imagem) ? item.imagem : dados.imagem;
         const itemMsg = `Olá! Vi no site da Casa Bela Móveis o item "${itemNome}" na categoria "${categoriaNome}" e gostaria de saber o valor e disponibilidade.`;
         const linkWppItem = gerarLinkWhatsApp(itemMsg);
         
         const cardItem = document.createElement('div');
         cardItem.className = 'galeria-item';
         cardItem.innerHTML = `
-            <img src="${dados.imagem}" alt="${itemNome}" class="galeria-imagem-real">
+            <img src="${itemImagem}" alt="${itemNome}" class="galeria-imagem-real">
             <div class="galeria-item-overlay">
                 <span class="galeria-item-titulo">${itemNome}</span>
                 <a href="${linkWppItem}" target="_blank" class="btn-galeria-consultar">Consultar</a>
