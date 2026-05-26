@@ -1583,6 +1583,7 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   white-space: nowrap;
+  margin-right: 25px;
 }
 .top-banner {
   background-color: var(--preto-secundario);
