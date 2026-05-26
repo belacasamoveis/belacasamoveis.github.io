@@ -1590,11 +1590,13 @@ section {
   color: var(--branco);
   text-align: center;
   padding: 6px 15px;
-  font-size: 0.7rem;
+  font-size: clamp(0.55rem, 3vw, 0.7rem);
   font-weight: 600;
   letter-spacing: 1px;
   border-bottom: 1px solid var(--borda-suave);
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .badge-topo-ano {
