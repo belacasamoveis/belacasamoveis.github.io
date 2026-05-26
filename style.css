@@ -1584,3 +1584,19 @@ section {
   display: inline-block;
   white-space: nowrap;
 }
+.top-banner {
+  background-color: var(--preto-secundario);
+  color: var(--branco);
+  text-align: center;
+  padding: 6px 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--borda-suave);
+  text-transform: uppercase;
+}
+
+.badge-topo-ano {
+  color: var(--amarelo-destaque);
+  font-weight: 800;
+}
