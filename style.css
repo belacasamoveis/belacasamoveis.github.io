@@ -13,7 +13,7 @@
   --borda-suave: #333333;
 }
 
-/* Reset Básico */
+/* Reset Bï¿½sico */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 
-/* Prevenção de estouro por palavras longas */
+/* Prevenï¿½ï¿½o de estouro por palavras longas */
 h1, h2, h3, h4, h5, h6, p, span, a, li {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -75,7 +75,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Utilitários */
+/* Utilitï¿½rios */
 .text-center {
   text-align: center;
 }
@@ -84,7 +84,7 @@ p {
   color: var(--amarelo-destaque);
 }
 
-/* Botões */
+/* Botï¿½es */
 .btn-primary {
   display: inline-block;
   background-color: var(--amarelo-destaque);
@@ -103,7 +103,7 @@ p {
   transform: translateY(-2px);
 }
 
-/* Efeito 3: Brilho nos botões (Shine) */
+/* Efeito 3: Brilho nos botï¿½es (Shine) */
 .btn-primary::before {
   content: '';
   position: absolute;
@@ -144,7 +144,7 @@ p {
   font-size: 1.1rem;
 }
 
-/* 1. CABEÇALHO */
+/* 1. CABEï¿½ALHO */
 .header {
   position: fixed;
   top: 0;
@@ -170,6 +170,9 @@ p {
   color: var(--branco);
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo-img {
@@ -338,7 +341,7 @@ p {
   z-index: 1;
 }
 
-/* Estrutura Geral das Seções */
+/* Estrutura Geral das Seï¿½ï¿½es */
 section {
   padding: 80px 0;
 }
@@ -468,7 +471,7 @@ section {
 }
 
 .produto-card .imagem-container {
-  overflow: hidden; /* Mantém o zoom dentro do card */
+  overflow: hidden; /* Mantï¿½m o zoom dentro do card */
 }
 
 .produto-info {
@@ -752,7 +755,7 @@ section {
   z-index: 1;
 }
 
-/* 11. RODAPÉ */
+/* 11. RODAPï¿½ */
 .footer {
   background-color: var(--preto-secundario);
   padding: 60px 0 0;
@@ -772,7 +775,9 @@ section {
   color: var(--branco);
   text-transform: uppercase;
   margin-bottom: 15px;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo-img-footer {
@@ -848,7 +853,7 @@ section {
 .whatsapp-flutuante:hover {
   transform: scale(1.1);
   background-color: #20b858;
-  animation: none; /* Pausa o pulso no hover para focar na interação */
+  animation: none; /* Pausa o pulso no hover para focar na interaï¿½ï¿½o */
 }
 
 /* RESPONSIVIDADE */
@@ -1088,7 +1093,7 @@ section {
 
 /* 13. MODAL (GALERIA) */
 .modal {
-  display: none; /* Escondido por padrão */
+  display: none; /* Escondido por padrï¿½o */
   position: fixed;
   z-index: 2000;
   left: 0;
@@ -1565,3 +1570,17 @@ section {
 }
 
 
+
+.logo-badge {
+  font-size: 0.65rem;
+  color: var(--amarelo-destaque);
+  background-color: var(--cinza-escuro);
+  border: 1px solid var(--amarelo-destaque);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  white-space: nowrap;
+}
