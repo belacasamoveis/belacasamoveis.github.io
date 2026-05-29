@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Constante do Número do WhatsApp
  */
 const WHATSAPP_NUMBER = "554135855059";
@@ -14,35 +14,90 @@ function gerarLinkWhatsApp(mensagem) {
 const galeriaDados = {
     "Sofás": {
         imagem: "assets/cat-sofas.png",
-        itens: ["Sofá Retrátil 3 Lugares", "Sofá de Canto Moderno", "Sofá 2 Lugares Suede", "Poltrona Amamentação", "Sofá Reclinável Premium", "Divã Clássico"]
+        itens: [
+            { nome: "Sofá Retrátil 3 Lugares", imagem: "assets/sofa-01.webp" },
+            { nome: "Sofá de Canto Moderno", imagem: "assets/sofa-02.webp" },
+            { nome: "Sofá 2 Lugares Suede", imagem: "assets/sofa-03.webp" },
+            { nome: "Poltrona Decorativa", imagem: "assets/sofa-04.webp" },
+            { nome: "Sofá Reclinável Premium", imagem: "assets/sofa-05.webp" },
+            { nome: "Sofá Retrátil de Canto", imagem: "assets/sofa-06.webp" },
+            { nome: "Sofá Estofado Luxo", imagem: "assets/sofa-07.webp" }
+        ]
     },
     "Guarda-roupas": {
         imagem: "assets/cat-guardaroupas.png",
-        itens: ["Guarda-Roupa Casal 6 Portas", "Guarda-Roupa Solteiro", "Cômoda 4 Gavetas", "Guarda-Roupa Infantil", "Roupeiro com Espelho", "Sapateira Organizadora"]
+        itens: [
+            { nome: "Guarda-Roupa Casal Premium", imagem: "assets/guardaroupa-01.webp" },
+            { nome: "Guarda-Roupa Duplex Moderno", imagem: "assets/guardaroupa-02.webp" }
+        ]
     },
     "Camas e colchões": {
         imagem: "assets/cat-camas.png",
-        itens: ["Cama Box Casal", "Cama de Solteiro Madeira", "Colchão Molas Ensacadas", "Cama Box Queen Size", "Bicama com Gavetas", "Cabeceira Estofada"]
+        itens: [
+            { nome: "Cama Box Casal 01", imagem: "assets/casal-01.webp" },
+            { nome: "Cama Box Casal 02", imagem: "assets/casal-02.webp" },
+            { nome: "Cama Box Casal 03", imagem: "assets/casal-03.webp" },
+            { nome: "Cama Box Casal 04", imagem: "assets/casal-04.webp" },
+            { nome: "Cama Box Casal 05", imagem: "assets/casal-05.webp" },
+            { nome: "Cama Box Casal 06", imagem: "assets/casal-06.webp" },
+            { nome: "Cama Box Solteiro 01", imagem: "assets/solteiro-01.webp" },
+            { nome: "Cama Box Solteiro 02", imagem: "assets/solteiro-02.webp" },
+            { nome: "Cama Box Solteiro 03", imagem: "assets/solteiro-03.webp" }
+        ]
     },
     "Mesas e cadeiras": {
         imagem: "assets/cat-mesas.png",
-        itens: ["Mesa de Jantar 6 Cadeiras", "Mesa Tampo de Vidro", "Conjunto Mesa de Cozinha", "Cadeiras Estofadas Unidade", "Mesa Redonda 4 Cadeiras", "Banqueta Alta Cozinha"]
+        itens: [
+            { nome: "Conjunto Mesa de Jantar", imagem: "assets/mesa-01.webp" },
+            { nome: "Mesa de Jantar 4 Cadeiras", imagem: "assets/mesa-02.webp" },
+            { nome: "Mesa Tampo de Vidro", imagem: "assets/mesa-03.webp" },
+            { nome: "Mesa de Madeira Moderna", imagem: "assets/mesa-04.webp" },
+            { nome: "Mesa de Jantar 6 Cadeiras", imagem: "assets/mesa-05.webp" },
+            { nome: "Mesa Redonda 4 Cadeiras", imagem: "assets/mesa-06.webp" },
+            { nome: "Mesa de Cozinha Compacta", imagem: "assets/mesa-07.webp" }
+        ]
     },
     "Racks e painéis": {
         imagem: "assets/cat-racks.png",
-        itens: ["Rack com Painel Integrado", "Rack Retro com Pés Palito", "Painel Suspenso para TV", "Rack Moderno de Madeira", "Aparador Multiuso", "Suporte Articulado"]
+        itens: [
+            { nome: "Rack de Madeira com Painel", imagem: "assets/racks-01.webp" },
+            { nome: "Rack Retrô Moderno", imagem: "assets/racks-02.webp" },
+            { nome: "Rack com Painel Integrado", imagem: "assets/racks-03.webp" }
+        ]
     },
     "Cozinhas e armários": {
         imagem: "assets/cat-cozinhas.png",
-        itens: ["Armário de Cozinha Completo", "Balcão de Pia 1.20m", "Paneleiro Duplo", "Armário Aéreo com Vidro", "Fruteira de Chão", "Cozinha Modulada Suspensa"]
+        itens: [
+            { nome: "Armário de Cozinha Compacto", imagem: "assets/cozinha-01.webp" },
+            { nome: "Armário de Cozinha Completo", imagem: "assets/cozinha-02.webp" },
+            { nome: "Balcão de Pia", imagem: "assets/cozinha-03.webp" }
+        ]
     },
     "Eletrodomésticos": {
         imagem: "assets/cat-eletro.png",
-        itens: ["Geladeira Frost Free Inox", "Fogão 4 Bocas Acendimento", { nome: "Máquina de Lavar 12kg", imagem: "assets/cat-lavadora.png" }, "Micro-ondas Espelhado", "Geladeira Duplex Usada", "Secadora de Roupas"]
+        itens: [
+            { nome: "Geladeira Duplex Inox", imagem: "assets/geladeira-01.webp" },
+            { nome: "Geladeira Frost Free Branca", imagem: "assets/geladeira-02.webp" },
+            { nome: "Geladeira Consul Facilite", imagem: "assets/geladeira-03.webp" },
+            { nome: "Geladeira Frost Free Premium", imagem: "assets/geladeira-05.webp" },
+            { nome: "Máquina de Lavar Brastemp", imagem: "assets/maquina-01.webp" },
+            { nome: "Máquina de Lavar Consul", imagem: "assets/maquina-02.webp" },
+            { nome: "Máquina de Lavar Electrolux", imagem: "assets/maquina-03.webp" },
+            { nome: "Máquina de Lavar Premium", imagem: "assets/maquina-04.webp" }
+        ]
     },
     "Decoração": {
         imagem: "assets/cat-decoracao.png",
-        itens: ["Espelho Redondo Moldura", "Vaso de Planta Decorativo", "Quadro Abstrato Sala", "Luminária de Chão", "Tapete Geométrico", "Almofadas Decorativas"]
+        itens: [
+            { nome: "Quadro Decorativo", imagem: "assets/decoracao-01.webp" },
+            { nome: "Vaso de Decoração 1", imagem: "assets/decoracao-02.webp" },
+            { nome: "Vaso de Decoração 2", imagem: "assets/decoracao-03.webp" },
+            { nome: "Vaso de Decoração 3", imagem: "assets/decoracao-04.webp" },
+            { nome: "Enfeite Decorativo 1", imagem: "assets/decoracao-05.webp" },
+            { nome: "Enfeite Decorativo 2", imagem: "assets/decoracao-06.webp" },
+            { nome: "Enfeite Decorativo 3", imagem: "assets/decoracao-07.webp" },
+            { nome: "Enfeite Decorativo 4", imagem: "assets/decoracao-08.webp" }
+        ]
     }
 };
 
